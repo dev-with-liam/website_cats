@@ -1,0 +1,156 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	background-color: #eef7f3;
+	color: #1f2d2b;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1.6;
+}
+
+#nav{
+	display: flex;
+	flex-wrap: wrap;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #111f1d;
+}
+
+.navLi{
+	margin: 0;
+}
+
+.navA{
+	color: white;
+	text-decoration: none;
+	display: block;
+	padding: 15px 18px;
+}
+
+.navA:hover{
+	text-decoration: none;
+	background-color: #25665f;
+}
+
+.active{
+	background-color: #d89b59;
+	color: #111f1d;
+}
+
+.page-header{
+	padding: 34px 8%;
+	background-color: #d7ece7;
+}
+
+.page-header h1{
+	margin: 0 0 10px;
+	color: #174f4a;
+	font-size: 38px;
+}
+
+.page-header p{
+	max-width: 760px;
+	margin: 0;
+	font-size: 18px;
+	color: #243735;
+}
+
+main{
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 30px 20px;
+}
+
+.section-title{
+	color: #174f4a;
+	border-bottom: 3px solid #d89b59;
+	padding-bottom: 6px;
+}
+
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 18px;
+}
+
+.two-column{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 22px;
+	align-items: start;
+}
+
+.card{
+	background-color: white;
+	border: 1px solid #d7e2df;
+	border-radius: 8px;
+	padding: 18px;
+}
+
+.card h2,
+.card h3{
+	margin-top: 0;
+	color: #245d57;
+}
+
+.feature-image{
+	width: 100%;
+	border-radius: 8px;
+	object-fit: cover;
+	box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+table{
+	width: 100%;
+	border-collapse: collapse;
+	background-color: white;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+th,
+td{
+	border: 1px solid #d7e2df;
+	padding: 12px;
+	text-align: left;
+}
+
+th{
+	background-color: #174f4a;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #f4faf8;
+}
+
+a{
+	color: #0b6b61;
+}
+
+footer{
+	background-color: #111f1d;
+	color: white;
+	text-align: center;
+	width: 100%;
+	padding: 14px;
+	margin-top: 30px;
+}
+
+footer p{
+	margin: 0;
+}
+
+@media (max-width: 800px){
+	.grid,
+	.two-column{
+		grid-template-columns: 1fr;
+	}
+
+	.page-header h1{
+		font-size: 30px;
+	}
+}
